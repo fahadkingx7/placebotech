@@ -1,19 +1,4 @@
-// HEADER ANIMATION
-window.onscroll = function() {scrollFunction()};
-var element = document.getElementById("body");
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      $(".navbar").addClass("fixed-top");
-      element.classList.add("header-small");
-      $("body").addClass("body-top-padding");
-	  var logo_custom = "images/l1.jpg";
 
-  } else {
-      $(".navbar").removeClass("fixed-top");
-      element.classList.remove("header-small");
-      $("body").removeClass("body-top-padding");
-  }
-}
 
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({
